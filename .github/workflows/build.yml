@@ -22,7 +22,7 @@ jobs:
     - name: Setup Gradle
       uses: gradle/actions/setup-gradle@v3
 
-    - name: Build Debug APK
+    - name: Generate Wrapper & Build Debug APK
       run: |
         gradle wrapper --gradle-version 8.1.1
         chmod +x gradlew
